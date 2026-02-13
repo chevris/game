@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "German Quiz Questions Schema",
+  "description": "Schema for questions.json file containing German history and geography quiz questions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "text", "answers", "correct", "difficulty", "category"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique question identifier",
+        "minimum": 1
+      },
+      "text": {
+        "type": "string",
+        "description": "Question text in German",
+        "minLength": 10,
+        "maxLength": 500
+      },
+      "answers": {
+        "type": "array",
+        "description": "Array of exactly 3 answer options",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "minItems": 3,
+        "maxItems": 3
+      },
+      "correct": {
+        "type": "string",
+        "description": "Correct answer indicator",
+        "enum": ["A", "B", "C"]
+      },
+      "difficulty": {
+        "type": "integer",
+        "description": "Question difficulty level",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "category": {
+        "type": "string",
+        "description": "Question topic category",
+        "enum": ["history", "geography"]
+      }
+    },
+    "additionalProperties": false
+  },
+  "minItems": 1
+}
