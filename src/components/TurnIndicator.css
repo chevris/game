@@ -1,0 +1,132 @@
+.turn-indicator {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.turn-indicator h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.current-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.player-token-large {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.current-player h3 {
+  margin: 0;
+  color: #34495e;
+}
+
+.player-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: #ecf0f1;
+  border-radius: 4px;
+}
+
+.stat.correct {
+  background: #d4edda;
+}
+
+.stat.incorrect {
+  background: #f8d7da;
+}
+
+.stat-label {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.stat-value {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.all-players {
+  border-top: 2px solid #ecf0f1;
+  padding-top: 1rem;
+}
+
+.all-players h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.player-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  gap: 0.75rem;
+}
+
+.player-item.active {
+  background: #e3f2fd;
+  border: 2px solid #3498db;
+}
+
+.player-token-small {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.player-info {
+  flex: 1;
+  font-size: 0.85rem;
+  color: #34495e;
+}
+
+.mini-stats {
+  color: #7f8c8d;
+  font-size: 0.75rem;
+}

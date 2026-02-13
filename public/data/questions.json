@@ -1,0 +1,406 @@
+{
+  "description": "Sample questions for Spiral Quiz Game - German history and geography",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Wann fiel die Berliner Mauer?",
+      "answers": ["1987", "1989", "1991"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": 2,
+      "text": "Was ist die Hauptstadt von Deutschland?",
+      "answers": ["München", "Berlin", "Hamburg"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 3,
+      "text": "In welchem Jahr wurde die Bundesrepublik Deutschland gegründet?",
+      "answers": ["1945", "1949", "1955"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": 4,
+      "text": "Welcher Fluss fließt durch Berlin?",
+      "answers": ["Elbe", "Spree", "Rhein"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 5,
+      "text": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+      "answers": ["Willy Brandt", "Konrad Adenauer", "Helmut Schmidt"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": 6,
+      "text": "Welches Bundesland ist das größte Deutschlands?",
+      "answers": ["Nordrhein-Westfalen", "Niedersachsen", "Bayern"],
+      "correct": "C",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 7,
+      "text": "In welchem Jahr endete der Zweite Weltkrieg in Europa?",
+      "answers": ["1944", "1945", "1946"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": 8,
+      "text": "Wie viele Bundesländer hat Deutschland?",
+      "answers": ["14", "16", "18"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 9,
+      "text": "Wann wurde die Deutsche Demokratische Republik (DDR) gegründet?",
+      "answers": ["1947", "1949", "1951"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": 10,
+      "text": "Welche Stadt liegt nicht in Bayern?",
+      "answers": ["München", "Nürnberg", "Stuttgart"],
+      "correct": "C",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 11,
+      "text": "In welchem Jahr wurde Martin Luther geboren?",
+      "answers": ["1483", "1517", "1546"],
+      "correct": "A",
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": 12,
+      "text": "Welcher Berg ist der höchste in Deutschland?",
+      "answers": ["Feldberg", "Brocken", "Zugspitze"],
+      "correct": "C",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 13,
+      "text": "Wer war der letzte Kaiser des Deutschen Reiches?",
+      "answers": ["Wilhelm I.", "Wilhelm II.", "Friedrich III."],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": 14,
+      "text": "An welches Land grenzt Deutschland nicht?",
+      "answers": ["Polen", "Schweiz", "Italien"],
+      "correct": "C",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 15,
+      "text": "In welchem Jahr fand die deutsche Wiedervereinigung statt?",
+      "answers": ["1989", "1990", "1991"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "history"
+    },
+    {
+      "id": 16,
+      "text": "Welche Stadt ist bekannt als 'Tor zur Welt'?",
+      "answers": ["Bremen", "Hamburg", "Rostock"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 17,
+      "text": "Wann begann der Dreißigjährige Krieg?",
+      "answers": ["1598", "1618", "1638"],
+      "correct": "B",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 18,
+      "text": "Welcher See ist der größte in Deutschland?",
+      "answers": ["Bodensee", "Chiemsee", "Müritz"],
+      "correct": "A",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 19,
+      "text": "In welchem Jahr wurde das Grundgesetz verkündet?",
+      "answers": ["1947", "1949", "1951"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": 20,
+      "text": "Welcher Fluss ist der längste in Deutschland?",
+      "answers": ["Donau", "Rhein", "Elbe"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 21,
+      "text": "Wer schrieb die 95 Thesen?",
+      "answers": ["Martin Luther", "Johannes Calvin", "Ulrich Zwingli"],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": 22,
+      "text": "In welchem Bundesland liegt der Schwarzwald?",
+      "answers": ["Bayern", "Baden-Württemberg", "Hessen"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 23,
+      "text": "Wann wurde Otto von Bismarck zum Reichskanzler ernannt?",
+      "answers": ["1862", "1871", "1890"],
+      "correct": "B",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 24,
+      "text": "Welche Insel gehört zu Deutschland?",
+      "answers": ["Korsika", "Sylt", "Gotland"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 25,
+      "text": "In welchem Jahr wurde die Weimarer Republik ausgerufen?",
+      "answers": ["1918", "1919", "1920"],
+      "correct": "A",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 26,
+      "text": "Welche Stadt war nie Hauptstadt eines deutschen Staates?",
+      "answers": ["Bonn", "Dresden", "Essen"],
+      "correct": "C",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 27,
+      "text": "Wann fand die Schlacht bei Waterloo statt?",
+      "answers": ["1805", "1815", "1825"],
+      "correct": "B",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 28,
+      "text": "Welches Meer grenzt an Deutschland?",
+      "answers": ["Mittelmeer", "Nordsee", "Schwarzes Meer"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 29,
+      "text": "Wer war der erste Präsident der Bundesrepublik Deutschland?",
+      "answers": ["Theodor Heuss", "Heinrich Lübke", "Gustav Heinemann"],
+      "correct": "A",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 30,
+      "text": "In welcher Stadt steht das Brandenburger Tor?",
+      "answers": ["München", "Berlin", "Brandenburg"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 31,
+      "text": "Wann wurde die NATO gegründet?",
+      "answers": ["1945", "1949", "1955"],
+      "correct": "B",
+      "difficulty": 5,
+      "category": "history"
+    },
+    {
+      "id": 32,
+      "text": "Welches Bundesland hat die meisten Einwohner?",
+      "answers": ["Bayern", "Nordrhein-Westfalen", "Baden-Württemberg"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 33,
+      "text": "In welchem Jahr wurde die Europäische Union gegründet?",
+      "answers": ["1957", "1993", "2002"],
+      "correct": "B",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 34,
+      "text": "Welche Stadt liegt am weitesten nördlich?",
+      "answers": ["Hamburg", "Kiel", "Flensburg"],
+      "correct": "C",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 35,
+      "text": "Wann endete der Erste Weltkrieg?",
+      "answers": ["1917", "1918", "1919"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": 36,
+      "text": "Welcher Gebirgszug trennt Deutschland von Tschechien?",
+      "answers": ["Alpen", "Erzgebirge", "Harz"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 37,
+      "text": "Wer war der letzte Führer der DDR?",
+      "answers": ["Erich Honecker", "Egon Krenz", "Walter Ulbricht"],
+      "correct": "B",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 38,
+      "text": "Welche Stadt ist die Landeshauptstadt von Bayern?",
+      "answers": ["Nürnberg", "München", "Augsburg"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 39,
+      "text": "In welchem Jahr wurde die Berliner Luftbrücke durchgeführt?",
+      "answers": ["1947-48", "1948-49", "1949-50"],
+      "correct": "B",
+      "difficulty": 5,
+      "category": "history"
+    },
+    {
+      "id": 40,
+      "text": "Welches ist das kleinste Bundesland nach Fläche?",
+      "answers": ["Saarland", "Bremen", "Hamburg"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 41,
+      "text": "Wann wurde das Heilige Römische Reich aufgelöst?",
+      "answers": ["1789", "1806", "1815"],
+      "correct": "B",
+      "difficulty": 5,
+      "category": "history"
+    },
+    {
+      "id": 42,
+      "text": "An welchem Fluss liegt Frankfurt am Main?",
+      "answers": ["Rhein", "Main", "Neckar"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 43,
+      "text": "Wer war der erste Kanzler des vereinigten Deutschlands nach 1990?",
+      "answers": ["Helmut Schmidt", "Helmut Kohl", "Gerhard Schröder"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "history"
+    },
+    {
+      "id": 44,
+      "text": "Welche Großstadt liegt in Sachsen?",
+      "answers": ["Leipzig", "Hannover", "Dortmund"],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "geography"
+    },
+    {
+      "id": 45,
+      "text": "In welchem Jahr fand die Novemberrevolution statt?",
+      "answers": ["1917", "1918", "1919"],
+      "correct": "B",
+      "difficulty": 4,
+      "category": "history"
+    },
+    {
+      "id": 46,
+      "text": "Welche Region ist bekannt für ihre Weinproduktion?",
+      "answers": ["Ruhrgebiet", "Rheingau", "Lausitz"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "geography"
+    },
+    {
+      "id": 47,
+      "text": "Wann trat Deutschland der UNO bei?",
+      "answers": ["1945", "1973", "1990"],
+      "correct": "B",
+      "difficulty": 5,
+      "category": "history"
+    },
+    {
+      "id": 48,
+      "text": "Welche Stadt ist bekannt für das Oktoberfest?",
+      "answers": ["Berlin", "München", "Stuttgart"],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "geography"
+    },
+    {
+      "id": 49,
+      "text": "Wann wurde der Euro in Deutschland eingeführt?",
+      "answers": ["1999", "2002", "2005"],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "history"
+    },
+    {
+      "id": 50,
+      "text": "In welchem Bundesland liegt die Insel Rügen?",
+      "answers": ["Schleswig-Holstein", "Mecklenburg-Vorpommern", "Niedersachsen"],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "geography"
+    }
+  ]
+}

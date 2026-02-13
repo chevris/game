@@ -1,0 +1,66 @@
+.game-board-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.game-board {
+  display: grid;
+  gap: 2px;
+  background: #34495e;
+  padding: 2px;
+  border-radius: 4px;
+  max-width: 600px;
+  max-height: 600px;
+  aspect-ratio: 1;
+}
+
+.board-cell {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 20px;
+  min-height: 20px;
+  font-size: 0.7rem;
+  color: #95a5a6;
+}
+
+.board-cell.center {
+  background: #f39c12;
+  font-weight: bold;
+}
+
+.cell-number {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.player-tokens {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+
+.player-token {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.6rem;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
