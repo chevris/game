@@ -1,64 +1,60 @@
 import { useState } from 'react';
 import { useGameStore } from '../store/gameStore';
+import { characters } from '../data/characters';
+import { CharacterCard } from './CharacterCard';
 import './GameSetup.css';
 
 export function GameSetup() {
-  const [playerCount, setPlayerCount] = useState(1);
-  const [boardSize, setBoardSize] = useState(11);
+  const [selectedIndices, setSelectedIndices] = useState([]);
   const initializeGame = useGameStore(state => state.initializeGame);
-  
-  const handleStart = () => {
-    if (boardSize % 2 === 0) {
-      alert('Board size must be an odd number!');
-      return;
-    }
-    initializeGame(playerCount, boardSize);
+
+  const handleSelect = (charId) => {
+    setSelectedIndices(prev => {
+      if (prev.includes(charId)) {
+        return prev.filter(id => id !== charId);
+      }
+      if (prev.length >= 3) {
+        return prev;
+      }
+      return [...prev, charId];
+    });
   };
-  
-  const oddSizes = [5, 7, 9, 11, 13, 15, 17, 19, 21];
-  
+
+  const handleStart = () => {
+    if (selectedIndices.length === 0) return;
+    initializeGame(selectedIndices, 7);
+  };
+
   return (
     <div className="game-setup">
-      <h1>Spiral Quiz Game</h1>
-      <p>Beantworte Fragen über deutsche Geschichte und Geografie!</p>
-      
-      <div className="setup-form">
-        <div className="form-group">
-          <label htmlFor="player-count">Number of Players:</label>
-          <select 
-            id="player-count"
-            value={playerCount} 
-            onChange={(e) => setPlayerCount(Number(e.target.value))}
-          >
-            <option value={1}>1 Player</option>
-            <option value={2}>2 Players</option>
-            <option value={3}>3 Players</option>
-            <option value={4}>4 Players</option>
-          </select>
-        </div>
-        
-        <div className="form-group">
-          <label htmlFor="board-size">Board Size:</label>
-          <select 
-            id="board-size"
-            value={boardSize} 
-            onChange={(e) => setBoardSize(Number(e.target.value))}
-          >
-            {oddSizes.map(size => (
-              <option key={size} value={size}>
-                {size}×{size} ({size * size} cells)
-              </option>
-            ))}
-          </select>
-        </div>
-        
-        <button 
-          className="start-button" 
-          onClick={handleStart}
-        >
-          Start Game
-        </button>
+      <h1>Der Weg zur Gleichheit</h1>
+
+      <p className="game-rules">
+        Sei die Erste, die das Ziel erreicht, indem du Fragen zur Geschichte der
+        Frauen weltweit richtig beantwortest. Aber Vorsicht:&nbsp;
+        <em>„Manche Fragen sind kniffliger als andere!"</em>
+      </p>
+
+      <p className="select-hint">Wähle 1 bis 3 Spielerinnen:</p>
+
+      <div className="cards-row">
+        {characters.map(character => (
+          <CharacterCard
+            key={character.id}
+            character={character}
+            selected={selectedIndices.includes(character.id)}
+            onSelect={handleSelect}
+          />
+        ))}
       </div>
+
+      <button
+        className="start-button"
+        onClick={handleStart}
+        disabled={selectedIndices.length === 0}
+      >
+        Spiel starten
+      </button>
     </div>
   );
 }

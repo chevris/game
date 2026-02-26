@@ -4,10 +4,11 @@ import { movePlayer } from '../engine/movementEngine';
 import { checkWin } from '../engine/victoryChecker';
 import { getDifficulty } from '../engine/difficultyMapper';
 import { selectQuestion, getOtherPlayersQuestions } from '../engine/questionSelector';
+import { characters } from '../data/characters';
 
 export const useGameStore = create((set, get) => ({
   // Game state
-  boardSize: 11,
+  boardSize: 7,
   spiralPath: [],
   centerIndex: 0,
   gameStatus: 'setup', // 'setup' | 'playing' | 'finished'
@@ -28,11 +29,11 @@ export const useGameStore = create((set, get) => ({
   // Actions
   
   /**
-   * Initialize a new game with specified players and board size
-   * @param {number} playerCount - Number of players (1-4)
-   * @param {number} boardSize - Board size (must be odd, default 11)
+   * Initialize a new game with selected character indices and board size
+   * @param {number[]} selectedIndices - Array of character IDs (0, 1, or 2)
+   * @param {number} boardSize - Board size (must be odd, always 11)
    */
-  initializeGame: (playerCount, boardSize = 11) => {
+  initializeGame: (selectedIndices, boardSize = 7) => {
     const spiral = generateSpiral(boardSize);
     const center = getCenterIndex(boardSize);
     
@@ -40,13 +41,15 @@ export const useGameStore = create((set, get) => ({
       boardSize,
       spiralPath: spiral,
       centerIndex: center,
-      players: Array.from({ length: playerCount }, (_, i) => ({
+      players: selectedIndices.map((charId, i) => ({
         id: i + 1,
         position: 0,
         answeredQuestions: [],
         correctCount: 0,
         incorrectCount: 0,
-        color: ['red', 'blue', 'green', 'yellow'][i]
+        color: characters[charId].playerColor,
+        name: characters[charId].name,
+        characterId: charId,
       })),
       gameStatus: 'playing',
       currentTurnIndex: 0,
@@ -204,7 +207,7 @@ export const useGameStore = create((set, get) => ({
    */
   resetGame: () => {
     set({
-      boardSize: 11,
+      boardSize: 7,
       spiralPath: [],
       centerIndex: 0,
       gameStatus: 'setup',

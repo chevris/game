@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CharacterDef",
+  "description": "Schema for a playable character displayed on the home screen character card. Three instances are defined in src/data/characters.js.",
+  "type": "object",
+  "required": ["id", "name", "bio", "imageSrc", "playerColor"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2,
+      "description": "Zero-based unique index of the character (0 = Marie Curie, 1 = Rosa Parks, 2 = Malala Yousafzai)"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Full display name of the historical figure"
+    },
+    "bio": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 400,
+      "description": "Short biographical text in German, shown in the info overlay when the user taps/clicks the info icon on the card"
+    },
+    "imageSrc": {
+      "type": "string",
+      "pattern": "^/images/[a-z0-9\\-]+\\.svg$",
+      "description": "Public URL path to the SVG portrait placeholder, e.g. /images/marie-curie.svg"
+    },
+    "playerColor": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{3,6}$",
+      "description": "CSS hex color used for this character's player token on the game board"
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "id": 0,
+      "name": "Marie Curie",
+      "bio": "Marie Curie (1867–1934) war eine polnisch-französische Physikerin und Chemikerin. Sie war die erste Frau, die einen Nobelpreis erhielt, und die einzige Person, die Nobelpreise in zwei verschiedenen Wissenschaften gewann: Physik (1903) und Chemie (1911).",
+      "imageSrc": "/images/marie-curie.svg",
+      "playerColor": "#e63946"
+    },
+    {
+      "id": 1,
+      "name": "Rosa Parks",
+      "bio": "Rosa Parks (1913–2005) war eine US-amerikanische Bürgerrechtlerin. Ihr mutiger Protest gegen die Rassentrennung in einem Bus in Montgomery, Alabama, im Jahr 1955 löste den Montgomery Bus Boycott aus und wurde zu einem Symbol der Bürgerrechtsbewegung.",
+      "imageSrc": "/images/rosa-parks.svg",
+      "playerColor": "#2a9d8f"
+    },
+    {
+      "id": 2,
+      "name": "Malala Yousafzai",
+      "bio": "Malala Yousafzai (* 1997) ist eine pakistanische Bildungsaktivistin. Sie überstand 2012 ein Attentat der Taliban und kämpft seitdem weltweit für das Recht von Mädchen auf Bildung. 2014 erhielt sie als jüngste Person die Nobelpreis für den Frieden.",
+      "imageSrc": "/images/malala-yousafzai.svg",
+      "playerColor": "#e9c46a"
+    }
+  ]
+}

@@ -13,12 +13,12 @@ export function DiceRoller() {
   
   return (
     <div className="dice-roller">
-      <h3>Dice Roll</h3>
+      <h3>Würfel</h3>
       
       {hasRolled ? (
         <div className="dice-result">
           <div className="dice-face">{diceRoll}</div>
-          <p>Move {diceRoll} step{diceRoll !== 1 ? 's' : ''}!</p>
+          <p>{diceRoll === 1 ? '1 Schritt vorwärts!' : `${diceRoll} Schritte vorwärts!`}</p>
         </div>
       ) : (
         <button 
@@ -26,7 +26,7 @@ export function DiceRoller() {
           onClick={rollDice}
           disabled={!canRoll}
         >
-          {canRoll ? 'Roll Dice' : 'Answer correctly to roll'}
+          {canRoll ? 'Würfeln' : 'Richtig antworten zum Würfeln'}
         </button>
       )}
     </div>

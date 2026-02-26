@@ -1,4 +1,5 @@
 import { useGameStore } from '../store/gameStore';
+import { getTileColorLevel } from '../engine/tileColorMapper';
 import './GameBoard.css';
 
 export function GameBoard() {
@@ -33,10 +34,14 @@ export function GameBoard() {
             const playersHere = getPlayersAtPosition(pathIndex);
             const isCenter = pathIndex === centerIndex;
             
+            const colorLevel = pathIndex !== null && !isCenter
+              ? getTileColorLevel(pathIndex, spiralPath.length)
+              : null;
+
             return (
               <div 
                 key={`${x}-${y}`}
-                className={`board-cell ${isCenter ? 'center' : ''}`}
+                className={`board-cell${isCenter ? ' center' : colorLevel ? ` tile-level-${colorLevel}` : ''}`}
               >
                 <span className="cell-number">{pathIndex}</span>
                 {playersHere.length > 0 && (
@@ -46,7 +51,7 @@ export function GameBoard() {
                         key={player.id}
                         className="player-token"
                         style={{ backgroundColor: player.color }}
-                        title={`Player ${player.id}`}
+                        title={player.name || `Spielerin ${player.id}`}
                       >
                         {player.id}
                       </div>

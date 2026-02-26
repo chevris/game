@@ -15,21 +15,21 @@ export function WinScreen() {
   return (
     <div className="win-screen">
       <div className="win-content">
-        <h1>🎉 Congratulations! 🎉</h1>
+        <h1>🎉 Glückwunsch! 🎉</h1>
         <div 
           className="winner-token"
           style={{ backgroundColor: winningPlayer.color }}
         >
           {winningPlayer.id}
         </div>
-        <h2>Player {winningPlayer.id} Wins!</h2>
+        <h2>{winningPlayer.name || `Spielerin ${winningPlayer.id}`} hat gewonnen!</h2>
         <div className="stats">
-          <p>Correct Answers: {winningPlayer.correctCount}</p>
-          <p>Incorrect Answers: {winningPlayer.incorrectCount}</p>
-          <p>Accuracy: {Math.round((winningPlayer.correctCount / (winningPlayer.correctCount + winningPlayer.incorrectCount)) * 100)}%</p>
+          <p>Richtige Antworten: {winningPlayer.correctCount}</p>
+          <p>Falsche Antworten: {winningPlayer.incorrectCount}</p>
+          <p>Genauigkeit: {Math.round((winningPlayer.correctCount / (winningPlayer.correctCount + winningPlayer.incorrectCount)) * 100)}%</p>
         </div>
         <button className="restart-button" onClick={resetGame}>
-          Play Again
+          Nochmal spielen
         </button>
       </div>
     </div>

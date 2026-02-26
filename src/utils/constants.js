@@ -2,12 +2,12 @@
  * Game constants - centralized magic numbers
  */
 
-export const MAX_PLAYERS = 4;
+export const MAX_PLAYERS = 3;
 export const MIN_PLAYERS = 1;
 
-export const DEFAULT_BOARD_SIZE = 11;
+export const DEFAULT_BOARD_SIZE = 7;
 export const MIN_BOARD_SIZE = 5;
-export const MAX_BOARD_SIZE = 21;
+export const MAX_BOARD_SIZE = 7;
 
 export const DICE_SIDES = 6;
 export const MIN_DICE_ROLL = 1;
@@ -43,7 +43,6 @@ export const GAME_STATUS = {
 export const TURN_TRANSITION_DELAY = 1500;
 export const DICE_ANIMATION_DELAY = 500;
 export const QUESTION_PRESENTATION_DELAY = 100;
-export const VOICE_RECOGNITION_TIMEOUT = 10000;
 export const TTS_START_DELAY = 1000;
 
 // Question categories

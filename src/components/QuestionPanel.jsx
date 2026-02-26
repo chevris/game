@@ -1,7 +1,5 @@
-import { useEffect } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { useSpeechSynthesis } from '../hooks/useSpeechSynthesis';
-import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
 import './QuestionPanel.css';
 
 export function QuestionPanel() {
@@ -15,28 +13,10 @@ export function QuestionPanel() {
   // Text-to-speech for question
   useSpeechSynthesis(currentQuestion?.text, !isAnswered);
   
-  // Voice recognition for answers
-  const { supported, listening, error, start } = useSpeechRecognition(
-    (answer) => {
-      if (!isAnswered) {
-        submitAnswer(answer);
-      }
-    },
-    !isAnswered
-  );
-  
-  // Auto-start voice recognition when question appears
-  useEffect(() => {
-    if (currentQuestion && !isAnswered && supported) {
-      const timer = setTimeout(() => start(), 1000);
-      return () => clearTimeout(timer);
-    }
-  }, [currentQuestion, isAnswered, supported, start]);
-  
   if (!currentQuestion) {
     return (
       <div className="question-panel">
-        <p className="loading">Loading question...</p>
+        <p className="loading">Frage wird geladen…</p>
       </div>
     );
   }
@@ -44,27 +24,13 @@ export function QuestionPanel() {
   return (
     <div className="question-panel">
       <div className="difficulty-indicator">
-        <span>Difficulty: </span>
+        <span>Schwierigkeit: </span>
         {'⭐'.repeat(currentQuestion.difficulty)}
       </div>
       
       <div className="question-text">
         {currentQuestion.text}
       </div>
-      
-      {!isAnswered && supported && (
-        <div className={`voice-status ${listening ? 'listening' : ''} ${error ? 'error' : ''}`}>
-          {listening && '🎤 Listening... Say A, B, or C'}
-          {error && `⚠️ ${error}`}
-          {!listening && !error && '🎤 Voice recognition ready'}
-        </div>
-      )}
-      
-      {!supported && (
-        <div className="voice-status not-supported">
-          ⓘ Voice not supported - use buttons below
-        </div>
-      )}
       
       <div className="answer-buttons">
         {['A', 'B', 'C'].map((letter, index) => {
@@ -99,7 +65,7 @@ export function QuestionPanel() {
       {isAnswered && (
         <div className={`feedback ${isCorrect ? 'correct' : 'incorrect'}`}>
           {isCorrect ? '✓ Richtig!' : '✗ Falsch!'}
-          {!isCorrect && ` Correct answer: ${currentQuestion.correct}`}
+          {!isCorrect && ` Richtige Antwort: ${currentQuestion.correct}`}
         </div>
       )}
     </div>
