@@ -13,9 +13,9 @@ export const DICE_SIDES = 6;
 export const MIN_DICE_ROLL = 1;
 export const MAX_DICE_ROLL = 6;
 
-export const DIFFICULTY_LEVELS = 5;
+export const DIFFICULTY_LEVELS = 3;
 export const MIN_DIFFICULTY = 1;
-export const MAX_DIFFICULTY = 5;
+export const MAX_DIFFICULTY = 3;
 
 // Difficulty thresholds (percentage of board completion)
 export const DIFFICULTY_THRESHOLDS = {

@@ -35,5 +35,5 @@ export function generateSpiral(size) {
  * @returns {number} Index of center cell in spiral path
  */
 export function getCenterIndex(size) {
-  return Math.floor((size * size) / 2);
+  return size * size - 1;
 }

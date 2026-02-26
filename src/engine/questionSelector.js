@@ -17,7 +17,7 @@ export function selectQuestion(questions, difficulty, playerUsedIds, otherPlayer
   if (available.length === 0) {
     const fallbackOrder = [difficulty - 1, difficulty + 1, difficulty - 2, difficulty + 2];
     for (const fallbackDiff of fallbackOrder) {
-      if (fallbackDiff >= 1 && fallbackDiff <= 5) {
+      if (fallbackDiff >= 1 && fallbackDiff <= 3) {
         available = questions.filter(q => 
           q.difficulty === fallbackDiff && !excludedIds.has(q.id)
         );
