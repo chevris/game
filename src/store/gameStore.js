@@ -2,7 +2,6 @@ import { create } from 'zustand';
 import { generateSpiral, getCenterIndex } from '../engine/spiralGenerator';
 import { movePlayer } from '../engine/movementEngine';
 import { checkWin } from '../engine/victoryChecker';
-import { getDifficulty } from '../engine/difficultyMapper';
 import { selectQuestion, getOtherPlayersQuestions } from '../engine/questionSelector';
 import { characters } from '../data/characters';
 
@@ -11,6 +10,7 @@ export const useGameStore = create((set, get) => ({
   boardSize: 7,
   spiralPath: [],
   centerIndex: 0,
+  tileDifficulties: [],
   gameStatus: 'setup', // 'setup' | 'playing' | 'finished'
   currentTurnIndex: 0,
   winner: null,
@@ -36,11 +36,16 @@ export const useGameStore = create((set, get) => ({
   initializeGame: (selectedIndices, boardSize = 7) => {
     const spiral = generateSpiral(boardSize);
     const center = getCenterIndex(boardSize);
-    
+    const totalTiles = boardSize * boardSize;
+    const difficulties = Array.from({ length: totalTiles }, (_, i) =>
+      i === totalTiles - 1 ? null : Math.ceil(Math.random() * 3)
+    );
+
     set({
       boardSize,
       spiralPath: spiral,
       centerIndex: center,
+      tileDifficulties: difficulties,
       players: selectedIndices.map((charId, i) => ({
         id: i + 1,
         position: 0,
@@ -80,7 +85,7 @@ export const useGameStore = create((set, get) => ({
    * Present a question to the current player
    */
   presentQuestion: () => {
-    const { players, currentTurnIndex, questions, spiralPath } = get();
+    const { players, currentTurnIndex, questions, spiralPath, tileDifficulties } = get();
     const currentPlayer = players[currentTurnIndex];
     
     if (!currentPlayer || questions.length === 0) {
@@ -88,7 +93,7 @@ export const useGameStore = create((set, get) => ({
       return;
     }
     
-    const difficulty = getDifficulty(currentPlayer.position, spiralPath.length);
+    const difficulty = tileDifficulties[currentPlayer.position] ?? Math.ceil(Math.random() * 3);
     const otherIds = getOtherPlayersQuestions(players, currentPlayer.id, currentPlayer.position);
     
     const question = selectQuestion(
@@ -210,6 +215,7 @@ export const useGameStore = create((set, get) => ({
       boardSize: 7,
       spiralPath: [],
       centerIndex: 0,
+      tileDifficulties: [],
       gameStatus: 'setup',
       currentTurnIndex: 0,
       winner: null,

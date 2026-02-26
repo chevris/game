@@ -1,5 +1,4 @@
 import { useGameStore } from '../store/gameStore';
-import { getTileColorLevel } from '../engine/tileColorMapper';
 import './GameBoard.css';
 
 export function GameBoard() {
@@ -7,6 +6,7 @@ export function GameBoard() {
   const spiralPath = useGameStore(state => state.spiralPath);
   const players = useGameStore(state => state.players);
   const centerIndex = useGameStore(state => state.centerIndex);
+  const tileDifficulties = useGameStore(state => state.tileDifficulties);
   
   // Create 2D grid from spiral path
   const grid = Array(boardSize).fill(null).map(() => Array(boardSize).fill(null));
@@ -35,7 +35,7 @@ export function GameBoard() {
             const isCenter = pathIndex === centerIndex;
             
             const colorLevel = pathIndex !== null && !isCenter
-              ? getTileColorLevel(pathIndex, spiralPath.length)
+              ? (tileDifficulties[pathIndex] ?? null)
               : null;
 
             return (
