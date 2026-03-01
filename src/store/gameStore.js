@@ -73,7 +73,7 @@ export const useGameStore = create((set, get) => ({
    */
   loadQuestions: async () => {
     try {
-      const response = await fetch('/data/questions.json');
+      const response = await fetch(import.meta.env.BASE_URL + 'data/questions.json');
       const data = await response.json();
       set({ questions: data.questions || data });
     } catch (error) {
