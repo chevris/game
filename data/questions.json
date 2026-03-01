@@ -1,0 +1,378 @@
+{
+  "description": "Questions for Spiral Quiz Game - Frauenrechte weltweit",
+  "version": "2.0.0",
+  "questions": [
+    {
+      "id": 1,
+      "text": "In welchem Jahr führen Deutschland, Großbritannien, Polen und Russland das Frauenwahlrecht ein?",
+      "answers": [
+        "1919",
+        "1920",
+        "1918"
+      ],
+      "correct": "C",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 2,
+      "text": "Welches Land hat 2015 endlich das Wahlrecht für Frauen eingeführt?",
+      "answers": [
+        "Saudi-Arabien",
+        "Nordkorea",
+        "Afghanistan"
+      ],
+      "correct": "A",
+      "difficulty": 1,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 3,
+      "text": "In welchem Jahr durften französische Frauen zum ersten Mal wählen?",
+      "answers": [
+        "1945",
+        "1918",
+        "1960"
+      ],
+      "correct": "A",
+      "difficulty": 1,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 4,
+      "text": "Seit einigen Wochen hat ein Land Ehemännern das Recht eingeräumt, ihre Frauen zu schlagen. Welches Land ist das?",
+      "answers": [
+        "Saudi-Arabien",
+        "Iran",
+        "Afghanistan"
+      ],
+      "correct": "C",
+      "difficulty": 1,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 5,
+      "text": "Wer hat gesagt: „Die Frau hat das Recht, auf das Schafott zu steigen; sie muss auch das Recht haben, auf die Tribüne zu steigen.“",
+      "answers": [
+        "Simone Veil",
+        "Olympe de Gouges",
+        "Simone de Beauvoir"
+      ],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 6,
+      "text": "Welcher Staat gewährt Frauen kein Wahlrecht?",
+      "answers": [
+        "Vatikan",
+        "Türkei",
+        "Kolumbien"
+      ],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 7,
+      "text": "Welche Tat fordert jährlich etwa 4 Millionen weibliche Opfer, davon mehr als 2 Millionen unter fünf Jahren?",
+      "answers": [
+        "Inzest",
+        "Vergewaltigung",
+        "weibliche Genitalverstümmelung"
+      ],
+      "correct": "C",
+      "difficulty": 3,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 8,
+      "text": "Welche Frau hat dank ihres Buches über die Lebensbedingungen von Frauen in Kamerun den Prix Goncourt des Lycéens 2020 gewonnen?",
+      "answers": [
+        "Djaïli Amadou Amal",
+        "Chimamanda Ngozi Adichie",
+        "Fatou Diome"
+      ],
+      "correct": "A",
+      "difficulty": 3,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 9,
+      "text": "Wie viele Mädchen heiraten im Iran vor ihrem 18. Geburtstag?",
+      "answers": [
+        "7 100 000",
+        "3 800 000",
+        "10 400 000"
+      ],
+      "correct": "C",
+      "difficulty": 3,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 10,
+      "text": "Im Iran liegt das gesetzliche Heiratsalter für Mädchen bei 13 Jahren. Ist es möglich, sie mit Zustimmung des Vaters noch jünger zu verheiraten?",
+      "answers": [
+        "Ja",
+        "Nein",
+        "Es ist nicht legal, aber es wird nicht strafrechtlich verfolgt."
+      ],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 11,
+      "text": "Welchen Preis hat Malala Yousafzai im Alter von 17 Jahren gewonnen?",
+      "answers": [
+        "Nobelpreis für Chemie",
+        "Der Friedensnobelpreis",
+        "Goncourt-Preis"
+      ],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 12,
+      "text": "Wie heißt die junge Frau auf dem berühmten Foto mit dem Titel „Die Afghanin mit den grünen Augen“?",
+      "answers": [
+        "Shabnam Mohammadzai",
+        "Sharbat Gula",
+        "Soraya Tajik"
+      ],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 13,
+      "text": "Was wird jungen Frauen in Kamerun und Afrika beigebracht?",
+      "answers": [
+        "Dass Frauen sich gegenseitig unterstützen müssen",
+        "Dass sie nicht weinen sollen",
+        "Dass der schlimmste Feind einer Frau eine andere Frau ist"
+      ],
+      "correct": "C",
+      "difficulty": 3,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 14,
+      "text": "Aus welchem Land wurde am 21. März 2025 eine Frau Präsidentin?",
+      "answers": [
+        "Südafrika",
+        "Namibia",
+        "Somalia"
+      ],
+      "correct": "B",
+      "difficulty": 3,
+      "category": "Afrika / Naher Osten"
+    },
+    {
+      "id": 15,
+      "text": "Mehrere europäische Monarchien könnten bald von Frauen regiert werden. Welche?",
+      "answers": [
+        "Spanien, Belgien, die Niederlande, Norwegen und Schweden",
+        "Spanien, Luxemburg, die Niederlande, Norwegen und Schweden",
+        "Spanien, Belgien, die Niederlande, Norwegen"
+      ],
+      "correct": "A",
+      "difficulty": 3,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 16,
+      "text": "Wie lange dauerte die Ein-Kind-Politik in China?",
+      "answers": [
+        "1985-2015",
+        "1976-2016",
+        "1975-2015"
+      ],
+      "correct": "C",
+      "difficulty": 2,
+      "category": "Asien"
+    },
+    {
+      "id": 17,
+      "text": "Wie viele Millionen schwarze Kinder (Heihaizi) gibt es schätzungsweise in China?",
+      "answers": [
+        "14",
+        "13",
+        "12"
+      ],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "Asien"
+    },
+    {
+      "id": 18,
+      "text": "In China wurde 2016 ein Gesetz zur Gleichstellung eingeführt. Welches?",
+      "answers": [
+        "Ein Gesetz gegen häusliche Gewalt",
+        "Ein Gesetz zur Lohngleichheit",
+        "Ein Gesetz zur Gleichstellung in der Politik"
+      ],
+      "correct": "A",
+      "difficulty": 3,
+      "category": "Asien"
+    },
+    {
+      "id": 19,
+      "text": "Wie viel Prozent beträgt die Lohnungleichheit in Südkorea im Jahr 2025?",
+      "answers": [
+        "31%",
+        "13%",
+        "50%"
+      ],
+      "correct": "A",
+      "difficulty": 3,
+      "category": "Asien"
+    },
+    {
+      "id": 20,
+      "text": "Wie viel Prozent der Frauen in Südkorea werden 2025 erwerbstätig sein?",
+      "answers": [
+        "61,3%",
+        "31,6%",
+        "80%"
+      ],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "Asien"
+    },
+    {
+      "id": 21,
+      "text": "Was ist die 4B-Bewegung in Südkorea?",
+      "answers": [
+        "Eine patriarchalische Bewegung",
+        "Eine frauenfeindliche Bewegung",
+        "Eine feministische Bewegung"
+      ],
+      "correct": "C",
+      "difficulty": 1,
+      "category": "Asien"
+    },
+    {
+      "id": 22,
+      "text": "Nennen Sie eines der Ziele der 4B-Bewegung:",
+      "answers": [
+        "Mit dem Patriarchat einverstanden sein",
+        "Männer heiraten",
+        "Keine Männer heiraten"
+      ],
+      "correct": "C",
+      "difficulty": 1,
+      "category": "Asien"
+    },
+    {
+      "id": 23,
+      "text": "Wie viel Prozent der Frauen in Japan bekleiden Führungspositionen?",
+      "answers": [
+        "50%",
+        "10%",
+        "70%"
+      ],
+      "correct": "B",
+      "difficulty": 1,
+      "category": "Asien"
+    },
+    {
+      "id": 24,
+      "text": "Wie viel Prozent der Sitze im Senat waren in Japan mit Frauen besetzt?",
+      "answers": [
+        "49%",
+        "31%",
+        "85%"
+      ],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "Asien"
+    },
+    {
+      "id": 25,
+      "text": "Wie heißt die erste Premierministerin Japans, die 2025 gewählt wurde?",
+      "answers": [
+        "Sanae Fujimoto",
+        "Yuri Takaichi",
+        "Sanae Takaichi"
+      ],
+      "correct": "C",
+      "difficulty": 1,
+      "category": "Asien"
+    },
+    {
+      "id": 26,
+      "text": "Die Geburtenrate in Japan ist...",
+      "answers": [
+        "Die niedrigste weltweit",
+        "Die höchste weltweit",
+        "Normal"
+      ],
+      "correct": "C",
+      "difficulty": 1,
+      "category": "Asien"
+    },
+    {
+      "id": 27,
+      "text": "Wer ist die Frau, die zum Recht auf Abtreibung in Frankreich beigetragen hat?",
+      "answers": [
+        "Simone Veil",
+        "Simone Weil",
+        "Simone de Beauvoir"
+      ],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 28,
+      "text": "Wer ist die erste Frau, die einen Nobelpreis für Chemie erhalten hat?",
+      "answers": [
+        "Malala Yousafzaï",
+        "Wangari Maathai",
+        "Marie Curie"
+      ],
+      "correct": "C",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 29,
+      "text": "Welches Land hat 1838 als erstes Frauen das Wahlrecht gewährt?",
+      "answers": [
+        "Neuseeland",
+        "Frankreich",
+        "Deutschland"
+      ],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 30,
+      "text": "An welchem Tag wird der Tag der Frauenrechte gefeiert?",
+      "answers": [
+        "am 8. März",
+        "am 7. Juni",
+        "am 8. Juni"
+      ],
+      "correct": "A",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    },
+    {
+      "id": 31,
+      "text": "In welchem Jahr führen Amerika das Frauenwahlrecht ein?",
+      "answers": [
+        "1918",
+        "1920",
+        "1900"
+      ],
+      "correct": "B",
+      "difficulty": 2,
+      "category": "Europa / Amerika"
+    }
+  ]
+}
